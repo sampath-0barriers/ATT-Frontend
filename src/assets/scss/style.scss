@@ -1,0 +1,253 @@
+@import "variables";
+@import "simplebar/dist/simplebar.min.css";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "./layout/sidebar";
+@import "./layout/container";
+@import "./layout/customizer";
+@import "./layout/horizontal";
+@import "./layout/topbar";
+@import "./layout/rtl/rtl";
+
+
+
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.mt-3{ margin-top: 0px}
+
+
+// //---------------light theme start----------
+
+// .bg-info{
+//         background-color: rgb(255 255 255) !important
+//       }
+
+//         .sidebarArea .nav-link{
+//               color: #232323!important;
+//             }
+//     .nav-link:hover, .nav-link:focus {
+
+//         color: #232323!important
+//  }
+//  .header-bgt{
+//     background-color: #353B55;
+//  }
+
+
+
+// //---------------light theme end----------
+
+
+
+// //---------------dark theme start----------
+
+// .dark{
+//     .bg-info{
+//         background-color: #353B55 !important
+//       }
+//     .sidebarArea .nav-link{
+//               color: #FFF!important;
+//             }
+//             .nav-link:hover, .nav-link:focus {
+
+//                 color: #FFF!important
+//          }
+//     .boxContainer {
+//         background: #262C44!important;
+//     }
+//     .topbar {
+//         background-color: #353B55!important;
+//     }
+//     --bs-card-bg:  #353B55!important;
+//     .card{
+//         background: #353B55!important;
+//     }
+// }
+
+
+
+// // ---------------dark theme end----------
+
+// // --bs-white-rgb: 255, 255, 255;
+// // --bs-white-rgb : 0, 30, 60;
+// .bg-info{
+//   background-color: rgb(255 255 255) !important
+// }
+
+// .sidebarArea .nav-link{
+//   color: #232323!important;
+// }
+
+
+
+
+.add-steps{
+    background:#e3ebf9!important;
+}
+.modal-content{
+    padding:20px;
+}
+.modal-title{
+    font-weight: 800 !important;
+    font-size: 1.3rem!important;
+    color: #4e75a2 !important;
+}
+
+.table-bordered > :not(caption) > * > *{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+:root, [data-bs-theme=light] {
+    --bs-body-font-size: 0.9rem!important;
+}
+
+
+
+.Scantable-sl-th1{
+    width: '1%'!important ;
+}
+.Scantable-name-th2{
+    width: '10%'!important            
+}
+.Scantable-url-th3{
+    width: '18%'!important 
+}
+.Scantable-depth-th4{
+    width: '7%'!important 
+}
+.Scantable-guidance-th5{
+    width: '10%'!important 
+}
+.Scantable-score-th6{
+    width: '10%'!important 
+}
+.Scantable-last-run-th7{
+    width: '15%'!important 
+}
+.Scantable-scheduled-th8{
+    width: '10%'!important 
+}
+.Scantable-actions-th9{
+    width: '12%'!important 
+}
+
+
+
+.page-icons{
+    stroke: #000 !important;
+}
+
+.table-bordered > :not(caption) > * > * {font-weight: 300 !important;}
+.table thead tr th { font-weight: 700 !important;}
+.custombtn {
+    top: 14% !important;
+}
+
+.btn-danger{
+    --bs-btn-bg: #122a44 !important;
+    --bs-btn-border-color: 0px !important;
+}
+
+.scanProcessBar{
+    background-color: #004a9a !important;
+    height: 30px !important;
+}
+
+// :root, [data-bs-theme=light]{
+// --bs-box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 79%) !important;
+// }
+
+
+
+
+.dark{
+.page-icons{
+    stroke: #FFF !important;
+}
+.bgdarknew{
+    background-color: #001021!important;
+}
+.card{
+    --bs-card-bg: #001429!important;
+    --bs-table-bg: #001429!important;
+}
+.customizerSidebar{
+    background: color #091b2d !important;
+}
+.btn-info{
+    --bs-btn-bg: #022e7d !important;
+    --bs-btn-border-color: #05478b !important;
+}
+.modal{
+    background: #00060dc7 !important;
+}
+
+}
+
+.login-bg{
+    background-image: url('../../assets/images/left-bg.png')    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 992px) {
+    .login-bg{
+        background-image: none;
+    }
+  }
+
+// @media (max-width: 992px) {
+//     .data-table-view{
+//       overflow-x: hidden; 
+//         width: '100%';
+//         overflow-x: 'auto';
+//         min-width: 800px;/* Disable scroll on desktop */
+//     }
+// }
+
+// .data-table-view{
+//     overflow-y: 'auto'; 
+//     flex-grow: 1;
+// }
+
+
+/* Global CSS */
+.data-table-view {
+    width: 100%;
+    overflow-x: auto; /* allow horizontal scroll */
+    flex-grow: 1;
+  }
+  
+  /* Optional: Hide ugly scrollbars in mobile (optional for better UX) */
+  .data-table-view::-webkit-scrollbar {
+    height: 6px;
+  }
+  .data-table-view::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+  }
+
+
+
+  @media (max-width: 992px) {
+    .data-table-table {
+      table-layout: fixed;
+      width: 1200px; /* No quotes */
+    }
+  }
+  
+  @media (min-width: 993px) {
+    .data-table-table {
+      table-layout: fixed;
+      width: 100%;
+    }
+}
+
+
