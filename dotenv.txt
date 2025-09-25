@@ -1,0 +1,4 @@
+REACT_APP_LOCAL_ENCRYPTION_KEY= asdflkasdflaksflaksdf
+#Backend API URL
+# REACT_APP_API_URL=https://molyreporter-backend-cczz.onrender.com
+REACT_APP_API_URL=http://localhost:5000
